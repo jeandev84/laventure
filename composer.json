@@ -1,0 +1,26 @@
+{
+  "name": "jeandev84/laventure",
+  "description": "A simple PHP framework for building web application",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yao Kouassi Jean-Claude",
+      "email": "jeanyao@ymail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "symfony/var-dumper": "^5.3",
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "filp/whoops": "^2.14",
+    "twig/twig": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

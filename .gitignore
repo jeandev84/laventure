@@ -3,4 +3,8 @@
 vendor
 node_modules
 storage
+framework
+.env
+.env.local
 public/uploads/*
+.gitignore

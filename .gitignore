@@ -7,4 +7,3 @@ framework
 .env
 .env.local
 public/uploads/*
-.gitignore

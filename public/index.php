@@ -1,9 +1,9 @@
 <?php
 
 use Laventure\Component\Http\Kernel\Contract\HttpKernelInterface;
+use Laventure\Component\Http\Message\Response\Response;
 use Laventure\Foundation\Application;
-use Laventure\Foundation\Http\Request\Request;
-use Laventure\Foundation\Http\Response\Response;
+use Laventure\Foundation\Http\Message\Request\Request;
 
 /** @var Application $app */
 /** @var HttpKernelInterface $kernel */

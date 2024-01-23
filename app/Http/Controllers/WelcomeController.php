@@ -23,7 +23,13 @@ class WelcomeController extends AbstractController
        #[Route('/', methods: ['GET'], name: 'welcome')]
        public function index(Request $request): Response
        {
+            /*
             dump($request);
+            dump($this->container);
+            dump($this->container['config']);
+            $config = $this->container['config'];
+            echo $config->get('database.sqlite.database');
+            */
 
             return $this->render('welcome.html');
        }

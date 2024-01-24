@@ -31,6 +31,8 @@ class WelcomeController extends AbstractController
             echo $config->get('database.sqlite.database');
             */
 
+            dump($this->getConnection());
+
             return $this->render('welcome.html');
        }
 }

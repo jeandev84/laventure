@@ -27,7 +27,10 @@ return [
                 'charset'    => 'utf8',
                 'prefix'     => '',
                 'engine'     => 'InnoDB', // MyISAM
-                'options'    => []
+                'options'    => [
+                    #PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
+                    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
+                ]
 
             ],
             'pgsql' => [

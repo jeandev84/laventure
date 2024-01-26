@@ -13,8 +13,6 @@ use Laventure\Component\Http\Kernel\Contract\HttpKernelInterface;
 use Laventure\Foundation\Application;
 
 
-require __DIR__.'/constants.php';
-
 /*
 |-------------------------------------------------------------------
 |    Make new instance of application and add some settings
@@ -22,11 +20,9 @@ require __DIR__.'/constants.php';
 */
 
 
-$container = Container::getInstance();
-$app = (new Application($container, realpath(__DIR__.'/../')))
-       ->name(APP_NAME)
-       ->version(APP_VERSION);
-
+$app = (new Application(realpath(__DIR__.'/../')));
+$app->name('Laventure')
+    ->version('1.0');
 
 
 /*
@@ -34,7 +30,7 @@ $app = (new Application($container, realpath(__DIR__.'/../')))
 |    Binds important interfaces of application
 |-------------------------------------------------------------------
 */
-$app->singleton([
+$app->singletons([
     HttpKernelInterface::class => Kernel::class
 ]);
 

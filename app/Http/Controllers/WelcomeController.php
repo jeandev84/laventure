@@ -29,10 +29,14 @@ class WelcomeController extends AbstractController
             dump($this->container['config']);
             $config = $this->container['config'];
             echo $config->get('database.sqlite.database');
+            dump($this->getConnection());
             */
 
-            dump($this->getConnection());
+            dump($request);
 
-            return $this->render('welcome.html');
+
+            return $this->render('welcome.html', [
+                'controller' => __METHOD__
+            ]);
        }
 }

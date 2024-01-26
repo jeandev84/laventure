@@ -23,8 +23,7 @@ use Laventure\Foundation\Http\Message\Request\Request;
 
 
 
-define('Laventure',  microtime(true));
-
+define('START',  microtime(true));
 
 
 

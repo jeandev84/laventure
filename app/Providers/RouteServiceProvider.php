@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use Laventure\Component\Container\Provider\ServiceProvider;
+use Laventure\Component\Container\Service\Provider\ServiceProvider;
 
 /**
  * RouteServiceProvider

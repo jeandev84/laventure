@@ -44,7 +44,7 @@ $kernel = $app->get(ConsoleKernelInterface::class);
 
 /*
 |-------------------------------------------------------
-|    Get status executed command.
+|    Process execution command.
 |-------------------------------------------------------
 */
 

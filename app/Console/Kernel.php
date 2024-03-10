@@ -3,8 +3,10 @@ declare(strict_types=1);
 
 namespace App\Console;
 
+use Laventure\Foundation\Console\ConsoleKernel;
+
 /**
- * Kernel
+ * ConsoleKernel
  *
  * @author Jean-Claude <jeanyao@ymail.com>
  *
@@ -12,7 +14,7 @@ namespace App\Console;
  *
  * @package  App\Console
  */
-class Kernel
+class Kernel extends ConsoleKernel
 {
 
 }

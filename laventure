@@ -1,0 +1,67 @@
+#!/usr/bin/env php
+<?php
+
+use Laventure\Component\Console\Input\Types\Argv\ConsoleInputArgv;
+use Laventure\Component\Console\Kernel\ConsoleKernelInterface;
+use Laventure\Component\Console\Output\ConsoleOutput;
+
+define('Laventure', microtime(true));
+
+
+/*
+|--------------------------------------------------------
+|   Autoload dependencies of application
+|--------------------------------------------------------
+*/
+
+
+require_once realpath(__DIR__.'/vendor/autoload.php');
+
+
+
+
+/*
+|-------------------------------------------------------
+|    Get instance of Application
+|-------------------------------------------------------
+*/
+
+$app = require(__DIR__ . '/bootstrap/app.php');
+
+
+
+
+/*
+|-------------------------------------------------------
+|    Get instance of Console Kernel
+|-------------------------------------------------------
+*/
+
+$kernel = $app->get(ConsoleKernelInterface::class);
+
+
+
+
+/*
+|-------------------------------------------------------
+|    Get status executed command.
+|-------------------------------------------------------
+*/
+
+$status = $kernel->handle(
+    $input = new ConsoleInputArgv(),
+    new ConsoleOutput()
+);
+
+
+
+
+/*
+|-------------------------------------------------------
+|    Terminate execution command
+|-------------------------------------------------------
+*/
+
+$kernel->terminate($input, $status);
+
+

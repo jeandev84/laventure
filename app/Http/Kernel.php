@@ -6,7 +6,7 @@ namespace App\Http;
 use Laventure\Foundation\Http\HttpKernel;
 
 /**
- * Kernel
+ * ConsoleKernel
  *
  * @author Jean-Claude <jeanyao@ymail.com>
  *

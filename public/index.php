@@ -49,7 +49,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 
 /*
 |-------------------------------------------------------
-|    Get instance of Kernel
+|    Get instance of ConsoleKernel
 |-------------------------------------------------------
 */
 
@@ -63,7 +63,7 @@ $kernel = $app->get(HttpKernelInterface::class);
 */
 
 $response = $kernel->handle(
-    $request = Request::createFromGlobals()
+    $request = Request::fromGlobals()
 );
 
 

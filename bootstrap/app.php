@@ -8,6 +8,7 @@
 */
 
 use App\Http\Kernel;
+use Laventure\Component\Console\Kernel\ConsoleKernelInterface;
 use Laventure\Component\Container\Container;
 use Laventure\Component\Http\Kernel\Contract\HttpKernelInterface;
 use Laventure\Foundation\Application;
@@ -20,7 +21,7 @@ use Laventure\Foundation\Application;
 */
 
 
-$app = (new Application(realpath(__DIR__.'/../')));
+$app = (new Application(__DIR__.'/../'));
 $app->name('Laventure')
     ->version('1.0');
 
@@ -31,7 +32,8 @@ $app->name('Laventure')
 |-------------------------------------------------------------------
 */
 $app->singletons([
-    HttpKernelInterface::class => Kernel::class
+    HttpKernelInterface::class => Kernel::class,
+    ConsoleKernelInterface::class => \App\Console\Kernel::class
 ]);
 
 

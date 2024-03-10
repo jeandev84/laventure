@@ -24,15 +24,21 @@ class WelcomeController extends AbstractController
        public function index(Request $request): Response
        {
             /*
+            dd(ServerRequest::fromGlobals());
             dump($request);
             dump($this->container);
-            dump($this->container['config']);
-            $config = $this->container['config'];
-            echo $config->get('database.sqlite.database');
+            dump($this->container['demo']);
+            $demo = $this->container['demo'];
+            echo $demo->get('database.sqlite.database');
             dump($request);
             dump($this->getConnection());
+            dump($this->getManagerRegistry());
             */
 
+
+            $em = $this->getManagerRegistry()->getManager();
+            dump($em);
+            dump($request);
 
             return $this->render('welcome.html', [
                 'controller' => __METHOD__

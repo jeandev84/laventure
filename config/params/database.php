@@ -5,14 +5,13 @@ return [
     /*
      |---------------------------------------------------------------------
      |     PdoConnection to database [ mysql, sqlite, pgsql, oci (oracle) ]
-     |     // TODO wrap with base url something like base_url('/path/to/db'); for SQLite
      |---------------------------------------------------------------------
     */
     'connection'  => env('DB_TYPE', 'mysql'),
     'connections' => [
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => 'laventure.php.db', // ':memory'
+            'database' => base_path('data.db'), // ':memory'
             'options'  => []
         ],
         'mysql' => [

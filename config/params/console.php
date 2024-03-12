@@ -8,6 +8,7 @@ return [
      |------------------------------------------------------------------
     */
     'commands' => [
-       'path' => 'app/Console/Commands'
+       'dir'    => 'app/Console/Commands',
+       'prefix' => "App\\Console\\Commands"
     ],
 ];

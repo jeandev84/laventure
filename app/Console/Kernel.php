@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Console;
 
+use App\Console\Commands\TestCommand;
 use Laventure\Foundation\Console\ConsoleKernel;
 
 /**
@@ -16,5 +17,10 @@ use Laventure\Foundation\Console\ConsoleKernel;
  */
 class Kernel extends ConsoleKernel
 {
-
+     /**
+      * @var array
+     */
+     protected array $commands = [
+         TestCommand::class
+     ];
 }

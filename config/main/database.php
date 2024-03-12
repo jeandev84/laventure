@@ -56,8 +56,24 @@ return [
         ]
     ],
     'migrations' => [
-        'path'    => '',
-        'version' => 'migrations'
+        'dir'     => 'app/ORM/Migrations',
+        'version' => 'migrations',
+        'prefix'  => "App\\ORM\\Migrations"
     ],
-    'orm' => []
+    'orm' => [
+        'dir'        => 'app/ORM',
+        'prefix'     => "App\\ORM",
+        'entity'     => [
+            'dir'    => 'app/ORM/Entity',
+            'prefix' => "App\\ORM\\Entity"
+        ],
+        'repository' => [
+            'dir'    => 'app/ORM/Repository',
+            'prefix' => "App\\ORM\\Repository"
+        ],
+        'fixtures'   => [
+            'dir'    => 'app/ORM/Fixtures',
+            'prefix' => "App\\ORM\\Fixtures"
+        ]
+    ]
 ];

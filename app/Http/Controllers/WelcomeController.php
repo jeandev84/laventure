@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use Laventure\Component\Container\Container;
+
 use Laventure\Component\Database\ORM\Persistence\Manager\Contract\EntityManagerInterface;
 use Laventure\Component\Http\Message\Response\Response;
 use Laventure\Component\Routing\Route\Attributes\Route;

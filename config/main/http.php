@@ -7,11 +7,11 @@ return [
     |   Configurations
     |------------------------------------------------------------------
     */
-    'controller' => [
+    'controllers' => [
         'dir'    => 'app/Http/Controllers',
         'prefix' => "App\\Http\\Controllers"
     ],
-    'middleware' => [
+    'middlewares' => [
         'dir'    => 'app/Http/Middleware',
         'prefix' => "App\\Http\\Middleware"
     ]

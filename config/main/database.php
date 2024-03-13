@@ -55,25 +55,40 @@ return [
             'options'    => [],
         ]
     ],
-    'migrations' => [
-        'dir'     => 'app/ORM/Migrations',
-        'version' => 'migrations',
-        'prefix'  => "App\\ORM\\Migrations"
-    ],
     'orm' => [
         'dir'        => 'app/ORM',
         'prefix'     => "App\\ORM",
-        'entity'     => [
-            'dir'    => 'app/ORM/Entity',
-            'prefix' => "App\\ORM\\Entity"
+        // use data mapper entity manager
+        'mapper' => [
+            'entity'     => [
+                'dir'    => 'app/ORM/Persistence/Entity',
+                'prefix' => "App\\ORM\\Persistence\\Entity"
+            ],
+            'repository' => [
+                'dir'    => 'app/ORM/Persistence/Repository',
+                'prefix' => "App\\ORM\\Persistence\\Repository"
+            ],
+            'fixtures'   => [
+                'dir'    => 'app/ORM/Persistence/Fixtures',
+                'prefix' => "App\\ORM\\Persistence\\Fixtures"
+            ],
+            'migrations' => [
+                'dir'     => 'app/ORM/Persistence/Migrations',
+                'version' => 'migrations',
+                'prefix'  => "App\\ORM\\Persistence\\Migrations"
+            ],
         ],
-        'repository' => [
-            'dir'    => 'app/ORM/Repository',
-            'prefix' => "App\\ORM\\Repository"
-        ],
-        'fixtures'   => [
-            'dir'    => 'app/ORM/Fixtures',
-            'prefix' => "App\\ORM\\Fixtures"
+        // use active record
+        'activeRecord' => [
+            'model' => [
+                'dir'    => 'app/ORM/ActiveRecord',
+                'prefix' => "App\\ORM\\ActiveRecord",
+            ],
+            'migrations' => [
+                'dir'     => 'app/ORM/Migrations',
+                'version' => 'migrations',
+                'prefix'  => "App\\ORM\\Migrations"
+            ],
         ]
     ]
 ];

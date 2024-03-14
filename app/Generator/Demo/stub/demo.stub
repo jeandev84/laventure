@@ -1,0 +1,13 @@
+<?php
+namespace App\Demo;
+
+
+/**
+ * DummyClass
+ *
+ * @package App\Demo
+*/
+class DummyClass extends AbstractController
+{
+
+}

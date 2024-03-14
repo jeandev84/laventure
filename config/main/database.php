@@ -62,21 +62,21 @@ return [
         // use data mapper entity manager
         'mapper' => [
             'entity'     => [
-                'dir'    => 'app/ORM/Persistence/Entity',
-                'prefix' => "App\\ORM\\Persistence\\Entity"
+                'dir'    => 'app/ORM/Mapper/Entity',
+                'prefix' => "App\\ORM\\Mapper\\Entity"
             ],
             'repository' => [
-                'dir'    => 'app/ORM/Persistence/Repository',
-                'prefix' => "App\\ORM\\Persistence\\Repository"
+                'dir'    => 'app/ORM/Mapper/Repository',
+                'prefix' => "App\\ORM\\Mapper\\Repository"
             ],
             'fixtures'   => [
-                'dir'    => 'app/ORM/Persistence/Fixtures',
-                'prefix' => "App\\ORM\\Persistence\\Fixtures"
+                'dir'    => 'app/ORM/Mapper/Fixtures',
+                'prefix' => "App\\ORM\\Mapper\\Fixtures"
             ],
             'migrations' => [
-                'dir'     => 'app/ORM/Persistence/Migrations',
+                'dir'     => 'app/ORM/Mapper/Migrations',
                 'version' => 'migrations',
-                'prefix'  => "App\\ORM\\Persistence\\Migrations"
+                'prefix'  => "App\\ORM\\Mapper\\Migrations"
             ],
         ],
         // use active record

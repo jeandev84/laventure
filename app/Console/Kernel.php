@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Console;
 
-use App\Console\Commands\Demo\DemoCommand;
+use App\Console\Commands\Dummy\MakeDummyCommand;
 use App\Console\Commands\Users\CreateUserCommand;
 use Laventure\Foundation\Console\ConsoleKernel;
 
@@ -23,6 +23,6 @@ class Kernel extends ConsoleKernel
      */
      protected array $commands = [
          CreateUserCommand::class,
-         DemoCommand::class
+         MakeDummyCommand::class
      ];
 }

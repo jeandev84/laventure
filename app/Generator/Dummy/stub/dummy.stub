@@ -1,0 +1,13 @@
+<?php
+namespace App\Dummy;
+
+
+/**
+ * DummyClass
+ *
+ * @package App\Dummy
+*/
+class DummyClassName
+{
+
+}

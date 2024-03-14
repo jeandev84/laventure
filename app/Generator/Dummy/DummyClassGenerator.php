@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Generator\Demo;
+namespace App\Generator\Dummy;
 
 use Laventure\Foundation\Generator\Class\ClassGenerator;
 
@@ -14,7 +14,7 @@ use Laventure\Foundation\Generator\Class\ClassGenerator;
  *
  * @package  Laventure\Foundation\Generator\Class\ClassGenerator
 */
-class DemoClassGenerator extends ClassGenerator
+class DummyClassGenerator extends ClassGenerator
 {
 
     /**
@@ -22,7 +22,7 @@ class DemoClassGenerator extends ClassGenerator
     */
     public function getNamespace(): string
     {
-        return $this->config['demo.prefix'];
+        return $this->config['dummy.prefix'];
     }
 
 
@@ -33,7 +33,7 @@ class DemoClassGenerator extends ClassGenerator
     */
     public function getBaseDir(): string
     {
-        return $this->trimPath($this->config['demo.dir']);
+        return $this->trimPath($this->config['dummy.dir']);
     }
 
 
@@ -45,6 +45,6 @@ class DemoClassGenerator extends ClassGenerator
     */
     public function getStubPath(): string
     {
-        return __DIR__.'/stub/demo.stub';
+        return __DIR__.'/stub/dummy.stub';
     }
 }

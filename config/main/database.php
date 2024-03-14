@@ -58,6 +58,7 @@ return [
     'orm' => [
         'dir'        => 'app/ORM',
         'prefix'     => "App\\ORM",
+        'current'    => 'mapper',
         // use data mapper entity manager
         'mapper' => [
             'entity'     => [
@@ -79,15 +80,13 @@ return [
             ],
         ],
         // use active record
-        'activeRecord' => [
-            'model' => [
-                'dir'    => 'app/ORM/ActiveRecord',
-                'prefix' => "App\\ORM\\ActiveRecord",
-            ],
+        'model' => [
+            'dir'    => 'app/ORM/Model',
+            'prefix' => "App\\ORM\\Model",
             'migrations' => [
-                'dir'     => 'app/ORM/Migrations',
+                'dir'     => 'migrations',
                 'version' => 'migrations',
-                'prefix'  => "App\\ORM\\Migrations"
+                'prefix'  => "Migrations"
             ],
         ]
     ]

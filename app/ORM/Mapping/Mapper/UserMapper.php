@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ORM\Persistence\Mapper;
+namespace App\ORM\Mapping\Mapper;
 
 /**
- * BookMapper
+ * UserMapper
  *
  * @author Jean-Claude <jeanyao@ymail.com>
  *
  * @license https://github.com/jeandev84/laventure-framework/blob/master/LICENSE
  *
- * @package  App\ORM\Persistence\Persistence
-*/
-class BookMapper
+ * @package  App\ORM\Mapper\Mapper
+ */
+class UserMapper
 {
 
 }

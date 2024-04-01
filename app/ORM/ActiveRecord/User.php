@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\ORM\ActiveRecord;
 
+use Laventure\Component\Database\ORM\ActiveRecord\Query\ActiveRecordQuery;
 use Laventure\Foundation\Database\ORM\Model\Model;
 
 /**
@@ -13,11 +14,30 @@ use Laventure\Foundation\Database\ORM\Model\Model;
  * @license https://github.com/jeandev84/laventure-framework/blob/master/LICENSE
  *
  * @package  App\ORM\ActiveRecord
+ *
+ * @method static User find(int $id)
+ * @method static User[] all()
 */
 class User extends Model
 {
-     /**
-      * @var string
-     */
-     protected $table = 'users';
+    /**
+     * @var string
+    */
+    protected $table = 'users';
+
+
+
+    /* protected $timestamps = false; */
+
+
+
+    /**
+     * @var string[]
+    */
+    protected $fill  = [
+        'username',
+        'email',
+        'password',
+        'active'
+    ];
 }

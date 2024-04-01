@@ -18,54 +18,52 @@ use Laventure\Foundation\Http\Message\Request\Request;
 */
 class BookController extends AbstractController
 {
-        
-
 
         #[Route('/book', methods: ['GET|HEAD'], name: 'book.index')]
         public function index(Request $request): Response
         {
-               // TODO some logic here
+             return new Response('hello');
         }
 
 
         #[Route('/book/{id}', methods: ['GET'], name: 'book.show')]
         public function show(Request $request): Response
         {
-               // TODO some logic here
+
         }
 
 
         #[Route('/book/create', methods: ['GET'], name: 'book.create')]
         public function create(Request $request): Response
         {
-               // TODO some logic here
+
         }
 
 
         #[Route('/book/store', methods: ['POST'], name: 'book.store')]
         public function store(Request $request): Response
         {
-               // TODO some logic here
+
         }
 
 
         #[Route('/book/{id}/edit', methods: ['GET'], name: 'book.edit')]
         public function edit(Request $request): Response
         {
-               // TODO some logic here
+
         }
 
 
         #[Route('/book/{id}', methods: ['PUT|PATCH'], name: 'book.update')]
         public function update(Request $request): Response
         {
-               // TODO some logic here
+
         }
 
 
         #[Route('/book/{id}', methods: ['DELETE'], name: 'book.destroy')]
         public function destroy(Request $request): Response
         {
-               // TODO some logic here
+
         }
 }

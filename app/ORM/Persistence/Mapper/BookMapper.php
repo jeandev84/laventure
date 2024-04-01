@@ -10,7 +10,7 @@ namespace App\ORM\Persistence\Mapper;
  *
  * @license https://github.com/jeandev84/laventure-framework/blob/master/LICENSE
  *
- * @package  App\ORM\DataMapper\DataMapper
+ * @package  App\ORM\Persistence\Persistence
 */
 class BookMapper
 {

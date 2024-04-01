@@ -5,9 +5,8 @@ namespace App\ORM\Mapper\Repository;
 
 
 use App\ORM\Mapper\Entity\SomeEntity;
-use Laventure\Component\Database\ORM\Persistence\Manager\Contract\EntityManagerInterface;
-use Laventure\Component\Database\ORM\Persistence\Repository\ServiceEntityRepository;
-
+use Laventure\Component\Database\ORM\Manager\Contract\EntityManagerInterface;
+use Laventure\Component\Database\ORM\Manager\Repository\ServiceEntityRepository;
 
 
 /**

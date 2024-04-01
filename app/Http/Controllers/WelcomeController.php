@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\ORM\ActiveRecord\User;
-use Laventure\Component\Database\ORM\Persistence\Manager\Contract\EntityManagerInterface;
+use Laventure\Component\Database\ORM\Manager\Contract\EntityManagerInterface;
 use Laventure\Component\Http\Message\Response\Response;
 use Laventure\Component\Routing\Route\Attributes\Route;
 use Laventure\Foundation\Http\Controller\AbstractController;
@@ -31,13 +31,15 @@ class WelcomeController extends AbstractController
        }
 
 
+
+
+
        #[Route('/', methods: ['GET'], name: 'welcome')]
        public function index(Request $request): Response
        {
             #dump($this->em);
             #dump($request);
-
-            dd(User::all());
+            #dd(User::all());
 
             return $this->render('welcome.html', [
                 'controller' => __METHOD__

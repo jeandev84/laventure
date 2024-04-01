@@ -74,9 +74,9 @@ return [
                 'prefix' => "App\\ORM\\Mapping\\Fixtures"
             ],
             'migrations' => [
-                'dir'     => 'app/ORM/Mapping//Migrations',
+                'dir'     => 'app/ORM/Mapping/Migrations',
                 'version' => 'migrations',
-                'prefix'  => "App\\ORM\\Migrations"
+                'prefix'  => "App\\ORM\\Mapping\\Migrations"
             ],
         ],
         // use active record

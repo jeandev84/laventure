@@ -56,37 +56,36 @@ return [
         ]
     ],
     'orm' => [
-        'dir'        => 'app/ORM',
-        'prefix'     => "App\\ORM",
-        'current'    => 'mapper',
-        // use data mapper entity manager
-        'mapper' => [
+        'dir'         => 'app/ORM',
+        'prefix'      => "App\\ORM",
+        'current'     => 'persistence', // model
+        'persistence' => [
             'entity'     => [
-                'dir'    => 'app/ORM/Mapping/Entity',
-                'prefix' => "App\\ORM\\Mapping\\Entity"
+                'dir'    => 'app/ORM/Persistence/Entity',
+                'prefix' => "App\\ORM\\Persistence\\Entity"
             ],
             'repository' => [
-                'dir'    => 'app/ORM/Mapping/Repository',
-                'prefix' => "App\\ORM\\Mapping\\Repository"
+                'dir'    => 'app/ORM/Persistence/Repository',
+                'prefix' => "App\\ORM\\Persistence\\Repository"
             ],
             'fixtures'   => [
-                'dir'    => 'app/ORM/Mapping/Fixtures',
-                'prefix' => "App\\ORM\\Mapping\\Fixtures"
+                'dir'    => 'app/ORM/Persistence/Fixtures',
+                'prefix' => "App\\ORM\\Persistence\\Fixtures"
             ],
             'migrations' => [
-                'dir'     => 'app/ORM/Mapping/Migrations',
+                'dir'     => 'app/ORM/Persistence/Migrations',
                 'version' => 'migrations',
-                'prefix'  => "App\\ORM\\Mapping\\Migrations"
+                'prefix'  => "App\\ORM\\Persistence\\Migrations"
             ],
         ],
         // use active record
         'model' => [
-            'dir'    => 'app/ORM/ActiveRecord',
-            'prefix' => "App\\ORM\\ActiveRecord",
+            'dir'    => 'app/Model',
+            'prefix' => "App\\ORM\\Model",
             'migrations' => [
-                'dir'     => 'migrations',
+                'dir'     => 'app/ORM/Model/Migrations',
                 'version' => 'migrations',
-                'prefix'  => "Migrations"
+                'prefix'  => "App\\ORM\\Model\\Migrations"
             ],
         ]
     ]

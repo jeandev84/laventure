@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ORM\Mapper\Repository;
+namespace App\ORM\Persistence\Repository;
 
 
-use App\ORM\Mapper\Entity\SomeEntity;
+use App\ORM\Persistence\Entity\SomeEntity;
 use Laventure\Component\Database\ORM\Manager\Contract\EntityManagerInterface;
 use Laventure\Component\Database\ORM\Manager\Repository\ServiceEntityRepository;
 

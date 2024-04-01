@@ -1,9 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ORM\ActiveRecord;
+namespace App\ORM\Model;
 
-use Laventure\Component\Database\ORM\ActiveRecord\Query\ActiveRecordQuery;
 use Laventure\Foundation\Database\ORM\Model\Model;
 
 /**

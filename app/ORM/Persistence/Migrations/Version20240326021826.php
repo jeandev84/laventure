@@ -34,11 +34,13 @@ class Version20240326021826 extends Migration
                $table->float('price');
                $table->string('image', 200);
                $table->boolean('in_stock')->default(0);
-               $table->nullableTimestamps();
+               $table->timestampsNullable();
                $table->softDeletes();
                $table->bigInteger('user_id')->nullable();
                $table->foreign('user_id', function (ForeignKeyInterface $foreign) {
-                   return $foreign->references('id')->on('users')->onDelete();
+                   return $foreign->references('id')
+                                  ->on('users')
+                                  ->onDelete('cascade');
                });
                /*
                $table->foreign('user_id')

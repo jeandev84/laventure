@@ -25,10 +25,12 @@ class Version20240402122051 extends Migration
     */
     public function up(SchemaInterface $schema): void
     {
+           /*
            $schema->update('users', function (Blueprint $table) {
                 $table->dropColumn('some_column_to_delete');
                 $table->renameColumn('some_column_to_rename', 'renamed');
            });
+           */
     }
 
 

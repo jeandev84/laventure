@@ -39,17 +39,19 @@ class UserRepository extends ServiceEntityRepository
 //            ->orderBy('u.id', 'ASC')
 //            ->limit(10)
 //            ->getQuery()
-//            ->fetchAll()
+//            ->fetch()
+//            ->all()
 //        ;
 //    }
-
+//
 //    public function findOneBySomeField($value): ?User
 //    {
 //        return $this->createQueryBuilder('u')
 //            ->andWhere('u.exampleField = :val')
 //            ->setParameter('val', $value)
 //            ->getQuery()
-//            ->fetchOne();
+//            ->fetch()
+//            ->one();
 //
 //    }
 }

@@ -4,6 +4,17 @@
 </a>
 </p>
 
+<p align="center">
+<a href="https://packagist.org/packages/laventure/framework">
+  <img src="https://img.shields.io/packagist/dt/laventure/framework" alt="Total Downloads">
+</a>
+<a href="https://packagist.org/packages/laventure/framework">
+  <img src="https://img.shields.io/packagist/v/laventure/framework" alt="Latest Stable Version">
+</a>
+<a href="https://packagist.org/packages/laventure/framework">
+    <img src="https://img.shields.io/packagist/l/laventure/framework" alt="License">
+</a>
+</p>
 
 ### About
 ```

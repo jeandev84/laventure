@@ -24,7 +24,7 @@ class UserFactory
      * @param UserInputDto $dto
      * @return User
     */
-    public static function createFromDto(UserInputDto $dto): User
+    public static function createUserFromDto(UserInputDto $dto): User
     {
         $user = new User();
         $user->setUsername($dto->username)

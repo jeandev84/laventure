@@ -41,18 +41,26 @@ class UserFixture extends Fixture
     }
 
 
+
+
+
+
+    /**
+     * @param EntityManagerInterface $em
+     * @return void
+    */
     public function loadUsersUsingDto(EntityManagerInterface $em): void
     {
         $userDto = new UserInputDto('john', 'john@demo.ru', '123');
 
         $userDto->books = [
             new BookInputDto('PHP-book', 'description php book', 35.80),
-            new BookInputDto('Delphi-book', 'description book 2', 20.70),
-            new BookInputDto('CSharp-book', 'description book 3', 25.50),
-            new BookInputDto('Golang-book', 'description book 4', 30.00)
+            new BookInputDto('Delphi-book', 'description delphi book', 20.70),
+            new BookInputDto('CSharp-book', 'description csharp book', 25.50),
+            new BookInputDto('Golang-book', 'description golang book', 30.00)
         ];
 
-        $user = UserFactory::createFromDto($userDto);
+        $user = UserFactory::createUserFromDto($userDto);
         $em->persist($user);
         $em->flush();
     }

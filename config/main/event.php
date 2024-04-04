@@ -7,7 +7,7 @@ return [
     |   Configurations
     |------------------------------------------------------------------
     */
-    'events' => [
+    'event' => [
         'dir'    => 'app/Event',
         'prefix' => "App\\Event"
     ],

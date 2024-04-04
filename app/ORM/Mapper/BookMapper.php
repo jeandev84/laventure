@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ORM\Persistence\Mapper;
+namespace App\ORM\Mapper;
 
 /**
  * BookMapper
@@ -10,7 +10,7 @@ namespace App\ORM\Persistence\Mapper;
  *
  * @license https://github.com/jeandev84/laventure-framework/blob/master/LICENSE
  *
- * @package  App\ORM\Persistence\Mapper
+ * @package  App\ORM\Mapper
 */
 class BookMapper
 {

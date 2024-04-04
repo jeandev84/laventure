@@ -60,13 +60,17 @@ php laventure migration:migrate
 - Open to your browser next link http://localhost:8000
 
 
-### Run tests 
-```bash
-./vendor/bin/phpunit tests
+
+5. List all available commands
 ```
-OR 
-```bash 
-php laventure test:run
+php laventure
+```
+
+
+
+### Run tests via
+```bash
+php laventure test:run or ./vendor/bin/phpunit tests
 ```
 
 

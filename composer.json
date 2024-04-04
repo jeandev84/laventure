@@ -11,10 +11,10 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">= 8.1",
-    "laventure/framework": "dev-master",
-    "ext-pdo": "*",
     "ext-curl": "*",
-    "ext-fileinfo": "*"
+    "ext-fileinfo": "*",
+    "ext-pdo": "*",
+    "laventure/framework": "dev-master"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.10",
